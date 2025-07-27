@@ -1,0 +1,8 @@
+1. Header
+2. Breadcrumb
+3. Instructor
+4. How the course is laid out
+5. What you will learn
+6. Exclusive Features
+7. Course Details 
+8. Localization
