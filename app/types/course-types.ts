@@ -1,5 +1,26 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+export interface SeoMetaItem {
+  content: string;
+  type: string; // e.g., "property" or "name"
+  value: string; // e.g., "og:title", "og:image"
+}
+
+export interface SeoSchemaItem {
+  meta_name: string; // e.g., "ld-json"
+  meta_value: string; // this may contain JSON string or be empty
+  type: string; // e.g., "ld-json"
+}
+
+ interface SeoData {
+  defaultMeta: SeoMetaItem[];
+  description: string;
+  keywords: string[];
+  schema: SeoSchemaItem[];
+  title: string;
+}
+
+
 interface MediaItem {
     name: string;
     resource_type: string;
@@ -47,7 +68,7 @@ interface CourseData {
     start_at: string;
     media: MediaItem[];
     checklist: ChecklistItem[];
-    seo: any[];
+    seo: SeoData;
     cta_text: CtaText;
     sections: Section[];
     is_cohort_based_course: boolean;
@@ -63,4 +84,4 @@ interface CourseApiResponse {
     status_code: number;
 }
 
-export type {MediaItem, ChecklistItem,Section, CtaText,OldInfo,CourseData, CourseApiResponse }
+export type { MediaItem, ChecklistItem, Section, CtaText, OldInfo, CourseData, CourseApiResponse }
