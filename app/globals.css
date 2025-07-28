@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+.container {
+  max-width: 1200px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+details > summary::marker {
+  content: "";
+}
+details[open] > summary:after {
+  transform: rotate(0deg);
+}
+details > summary:after {
+  background: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nMTInIGhlaWdodD0nOCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMi4xMiA2LjcxIDYgMi44M2wzLjg4IDMuODhhLjk5Ny45OTcgMCAxIDAgMS40MS0xLjQxTDYuNy43MWEuOTk2Ljk5NiAwIDAgMC0xLjQxIDBMLjcgNS4zYS45OTYuOTk2IDAgMCAwIDAgMS40MWMuMzkuMzggMS4wMy4zOSAxLjQyIDBaJyBmaWxsPScjMDAwJy8+PC9zdmc+);
+  content: "";
+  height: 0.5rem;
+  margin-top: -4px;
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 24px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+  width: 0.75rem;
+}
