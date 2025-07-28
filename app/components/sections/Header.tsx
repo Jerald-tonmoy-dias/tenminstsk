@@ -14,7 +14,7 @@ export default function Header({ currentLang }: HeaderProps) {
   const toggleLanguage = () => {
     const newLang = currentLang === "en" ? "bn" : "en";
     const segments = pathname.split("/");
-    segments[1] = newLang; // replace lang
+    segments[1] = newLang;
     const newPath = segments.join("/");
     router.push(newPath);
   };
@@ -36,16 +36,10 @@ export default function Header({ currentLang }: HeaderProps) {
             </Link>
           </div>
 
-          {/* Container for the switch and text */}
           <div className="flex items-center space-x-4">
-            {/* Text indicating the target language */}
             <span className="text-gray-700 font-medium text-sm">
-              {" "}
-              {/* Reduced text size slightly */}
               {currentLang === "en" ? "Switch to বাংলা" : "Switch to English"}
             </span>
-
-            {/* The actual toggle switch button */}
             <button
               type="button"
               onClick={toggleLanguage}
@@ -58,9 +52,8 @@ export default function Header({ currentLang }: HeaderProps) {
                 currentLang === "en" ? "Bengali" : "English"
               }`}
             >
-              {/* Visually hidden text for screen readers */}
               <span className="sr-only">Toggle language</span>
-              {/* The movable "thumb" of the switch */}
+
               <span
                 aria-hidden="true"
                 className={`pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow-lg

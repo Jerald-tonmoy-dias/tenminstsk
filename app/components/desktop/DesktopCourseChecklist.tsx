@@ -23,14 +23,13 @@ export default function DesktopCourseChecklist({
                     <div className="flex items-center justify-between md:flex-col md:items-start">
                       <div className="md:mb-3">
                         <div className="inline-block text-2xl font-semibold">
-                          ৳1000 
+                          ৳1000
                         </div>
-                    
                       </div>
                     </div>
                     <div className="flex items-center justify-between mb-2" />
                   </div>
-                  <button className=" bg-green-500 py-[12px] whitespace-nowrap button primary text-center md:w-full centered-buttons">
+                  <button className="bg-green-600 border-b border-green-800 cursor-pointer hover:bg-green-800 py-[12px] text-white rounded-[4px]">
                     {cta.name}
                   </button>
                 </div>

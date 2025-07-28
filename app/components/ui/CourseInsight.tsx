@@ -14,9 +14,9 @@ export default function CourseInsight({ data }: CourseInsightProps) {
             <h2 className="mb-4 text-xl font-semibold md:text-2xl">
               {data?.name}
             </h2>
-            <div className="rounded-md md:border border-2  border-[#dbe1eb]">
+            <div className="rounded-md  md:border-2  md:border-[#dbe1eb]">
               <div className="pt-2 md:p-6">
-                <ul className="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1fr] md:gap-4">
+                <ul className="grid grid-cols-1 gap-2 md:grid-cols-[1fr_1fr] md:gap-4 ">
                   {data?.values?.map((item) => (
                     <li key={item?.id} className="flex items-start gap-2 mb-2">
                       <svg

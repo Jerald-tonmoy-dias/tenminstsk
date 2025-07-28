@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
 
 interface VideoProps {
-  value: string; // YouTube video ID
+  value: string;
 }
 
 export default function Video({ value }: VideoProps) {

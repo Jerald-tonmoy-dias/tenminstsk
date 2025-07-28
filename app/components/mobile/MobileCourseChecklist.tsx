@@ -25,14 +25,14 @@ export default function MobileCourseChecklist({
                     <div className="flex items-center justify-between md:flex-col md:items-start">
                       <div className="md:mb-3">
                         <div className="inline-block text-2xl font-semibold">
-                          ৳1000 
+                          ৳1000
                         </div>
-                      
                       </div>
                     </div>
                     <div className="flex items-center justify-between mb-2" />
                   </div>
-                  <button className=" bg-green-500 whitespace-nowrap button primary text-center md:w-full centered-buttons">
+
+                  <button className=" bg-green-500 transition duration-300 ease-in-out rounded-[4px] whitespace-nowrap  md:w-full text-center">
                     {cta.name}
                   </button>
                 </div>

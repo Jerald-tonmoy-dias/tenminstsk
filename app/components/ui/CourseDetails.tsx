@@ -17,7 +17,7 @@ export default function CourseDetails({ data }: CourseDetailsProps) {
           <h2 className="text-xl font-semibold md:mb-4 md:text-2xl">
             {data?.name}
           </h2>
-          <div className="rounded-lg py-2 md:border md:px-5 border-2  border-[#dbe1eb]">
+          <div className="rounded-lg py-2  md:px-5 md:border-2  border-[#dbe1eb]">
             {data?.values?.map((item, index) => (
               <details
                 key={item?.id}
@@ -27,7 +27,7 @@ export default function CourseDetails({ data }: CourseDetailsProps) {
                 <summary
                   className="py-4 cursor-pointer"
                   onClick={(e) => {
-                    e.preventDefault(); // prevent default toggle
+                    e.preventDefault();
                     toggle(index);
                   }}
                 >
